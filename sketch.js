@@ -1,12 +1,12 @@
-var WIDHT = 600;
-var HEIGTH = 600;
 var x = 0;
 var y = 0;
-var tamano = 40;
+var tamano = 20;
 
 function setup() {
-	createCanvas(WIDHT, HEIGTH);
+	createCanvas(600, 600);
 	background(100);
+	noStroke();
+	stroke(255);
 }
 
 function draw() {
@@ -18,7 +18,7 @@ function draw() {
 	
 	x = x + tamano;
 	
-	if(x > WIDHT){
+	if(x > width){
 		y = y + tamano;
 		x = 0;
 	}
